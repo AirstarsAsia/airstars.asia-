@@ -8,9 +8,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-white text-xl font-bold mb-4">Shababu</h3>
+            <h3 className="text-white text-xl font-bold mb-4">Airstars</h3>
             <p className="text-sm">
-              Crafting exceptional experiences through innovative solutions.
+              Elevating businesses through strategic technology solutions.
             </p>
           </div>
           
@@ -26,8 +26,8 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <p className="text-sm">
-              <a href="mailto:hello@shababu.xyz" className="hover:text-white transition-colors">
-                hello@shababu.xyz
+              <a href="mailto:hello@airstars.asia" className="hover:text-white transition-colors">
+                hello@airstars.asia
               </a>
             </p>
           </div>
@@ -35,9 +35,9 @@ export default function Footer() {
         
         <div className="border-t border-slate-700 pt-8 text-sm text-center md:text-left">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>© 2024 Shababu Systems Ltd. All rights reserved.</p>
+            <p>© 2024 Airstars Asia. All rights reserved.</p>
             <p>
-              Company No. 16621448 | 
+              Registered in Asia | 
               <a 
                 href="https://find-and-update.company-information.service.gov.uk/company/16621448" 
                 target="_blank" 

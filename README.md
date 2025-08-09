@@ -1,8 +1,8 @@
-# Shababu Business Website
+# Airstars Business Website
 
 A modern, animated business website built with Next.js, Tailwind CSS, and Framer Motion.
 
-🚀 **Live at:** shababu.xyz & shaba.boo
+🚀 **Live at:** airstars.asia
 
 **Deployed to:** 206.189.152.245
 

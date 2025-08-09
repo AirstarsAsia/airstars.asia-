@@ -12,7 +12,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-6xl md:text-8xl font-bold text-slate-900 mb-6">
-            Shababu
+            Airstars
           </h1>
         </motion.div>
         <motion.div 
@@ -21,7 +21,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-2xl mx-auto">
-            Crafting exceptional experiences through innovative solutions
+            Elevating businesses through strategic technology solutions
           </p>
         </motion.div>
         <motion.div 

@@ -32,11 +32,11 @@ export default function Contact() {
           whileHover={{ scale: 1.05 }}
         >
           <a 
-            href="mailto:hello@shababu.xyz"
+            href="mailto:hello@airstars.asia"
             className="inline-flex items-center gap-3 bg-white text-slate-900 px-8 py-4 rounded-full text-lg font-medium hover:bg-slate-100 transition-colors mb-12"
           >
             <Mail className="w-5 h-5" />
-            hello@shababu.xyz
+            hello@airstars.asia
           </a>
         </motion.div>
         <motion.div 
