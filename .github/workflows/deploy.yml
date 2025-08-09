@@ -28,7 +28,7 @@ jobs:
       with:
         switches: -avzr --delete
         path: out/
-        remote_path: /var/www/shababu/
+        remote_path: /var/www/airstars/
         remote_host: ${{ secrets.HOST }}
         remote_user: ${{ secrets.USERNAME }}
         remote_key: ${{ secrets.SSH_KEY }}

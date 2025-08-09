@@ -12,6 +12,9 @@ export default function Footer() {
             <p className="text-sm">
               Elevating businesses through strategic technology solutions.
             </p>
+            <p className="text-xs mt-2 text-slate-400">
+              Part of the Shababu Group
+            </p>
           </div>
           
           <div>
@@ -35,7 +38,7 @@ export default function Footer() {
         
         <div className="border-t border-slate-700 pt-8 text-sm text-center md:text-left">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>© 2024 Airstars Asia. All rights reserved.</p>
+            <p>© 2024 Airstars Asia, part of Shababu Group. All rights reserved.</p>
             <p>
               Registered in Asia | 
               <a 

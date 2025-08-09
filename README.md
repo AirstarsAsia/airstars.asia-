@@ -4,8 +4,6 @@ A modern, animated business website built with Next.js, Tailwind CSS, and Framer
 
 🚀 **Live at:** airstars.asia
 
-**Deployed to:** 206.189.152.245
-
 ## Features
 
 - **Smooth animations** with Framer Motion
