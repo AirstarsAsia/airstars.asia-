@@ -19,11 +19,26 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
-          <p className="text-xl text-slate-600 leading-relaxed">
-            We believe in the power of thoughtful design and innovative technology to transform businesses. 
-            Our mission is to create digital experiences that not only look beautiful but drive real results 
-            for our clients. Every project is an opportunity to push boundaries and exceed expectations.
-          </p>
+          <div className="text-lg text-slate-600 leading-relaxed space-y-6">
+            <p>
+              What started as a focused wireless networking consultancy has evolved into comprehensive 
+              small business IT support. My journey began with a deep specialization in Wi-Fi infrastructure, 
+              earning certifications as a Certified Wireless Network Professional (CWNP) including the 
+              challenging Certified Wireless Network Administrator, Planning, and Security certifications.
+            </p>
+            <p>
+              Today, I organically grow with my clients, supporting everything from secure wireless deployments 
+              to complete workspace solutions. Whether it's designing enterprise-grade Wi-Fi networks, 
+              managing Mac deployments, optimizing Google Workspace and Microsoft 365 environments, 
+              or integrating the countless devices that keep small businesses running—I've touched every 
+              aspect of modern business IT.
+            </p>
+            <p>
+              My approach is simple: be the reliable IT partner that small businesses need, 
+              bringing enterprise-level expertise to organizations that deserve better than 
+              one-size-fits-all solutions.
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>

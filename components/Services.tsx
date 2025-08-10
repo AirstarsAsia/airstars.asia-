@@ -1,23 +1,23 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Palette, Code, Zap } from 'lucide-react'
+import { Wifi, Shield, Monitor } from 'lucide-react'
 
 const services = [
   {
-    icon: Palette,
-    title: 'Design',
-    description: 'Beautiful, user-centered designs that convert',
+    icon: Wifi,
+    title: 'Network & Wireless',
+    description: 'Secure wireless infrastructure design, deployment, and optimization for small businesses',
   },
   {
-    icon: Code,
-    title: 'Development',
-    description: 'Modern, scalable web applications',
+    icon: Shield,
+    title: 'IT Security & Management',
+    description: 'Comprehensive device management, security implementation, and Mac deployment services',
   },
   {
-    icon: Zap,
-    title: 'Strategy',
-    description: 'Data-driven solutions for growth',
+    icon: Monitor,
+    title: 'Workspace Solutions',
+    description: 'Google Workspace and Microsoft 365 setup, workflow optimization, and peripheral integration',
   },
 ]
 
