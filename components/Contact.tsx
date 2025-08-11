@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Twitter, Github, Linkedin } from 'lucide-react'
+import { Mail, Github, Linkedin, X } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -46,19 +46,39 @@ export default function Contact() {
           transition={{ delay: 0.6 }}
         >
           <div className="flex justify-center gap-6">
-            {[Twitter, Github, Linkedin].map((Icon, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.2, y: -5 }}
+            <motion.div whileHover={{ scale: 1.2, y: -5 }}>
+              <a
+                href="https://x.com/airstarsasia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full border border-slate-700 hover:border-slate-500 transition-colors"
+                aria-label="Follow us on X"
               >
-                <a
-                  href="#"
-                  className="p-3 rounded-full border border-slate-700 hover:border-slate-500 transition-colors"
-                >
-                  <Icon className="w-6 h-6" />
-                </a>
-              </motion.div>
-            ))}
+                <X className="w-6 h-6" />
+              </a>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.2, y: -5 }}>
+              <a
+                href="https://github.com/airstarsasia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full border border-slate-700 hover:border-slate-500 transition-colors"
+                aria-label="View our GitHub"
+              >
+                <Github className="w-6 h-6" />
+              </a>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.2, y: -5 }}>
+              <a
+                href="https://www.linkedin.com/in/petermears/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full border border-slate-700 hover:border-slate-500 transition-colors"
+                aria-label="Connect on LinkedIn"
+              >
+                <Linkedin className="w-6 h-6" />
+              </a>
+            </motion.div>
           </div>
         </motion.div>
       </div>
