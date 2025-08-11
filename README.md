@@ -2,7 +2,7 @@
 
 A modern, animated business website built with Next.js, Tailwind CSS, and Framer Motion.
 
-🚀 **Live at:** airstars.asia
+🚀 **Live at:** [airstars.asia](https://airstars.asia)
 
 ## Features
 
@@ -11,15 +11,25 @@ A modern, animated business website built with Next.js, Tailwind CSS, and Framer
 - **Responsive design** with Tailwind CSS
 - **Modern typography** using Inter font
 - **Optimized performance** with Next.js 13
+- **TypeScript** for type safety
 
 ## Sections
 
-- Hero with brand name and CTA
+- Hero with brand introduction
 - Services showcase with hover effects
 - About section with mission statement
-- Blog/Insights placeholder
-- Contact with email and social links
+- Insights/Blog articles
+- Contact information
 - Footer with legal links
+
+## Tech Stack
+
+- **Next.js 13** - React framework with App Router
+- **React 18** - UI library
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **Lenis** - Smooth scrolling
 
 ## Getting Started
 
@@ -39,12 +49,16 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-## Tech Stack
+## Project Structure
 
-- Next.js 13
-- React 18
-- Tailwind CSS
-- Framer Motion
-- Lenis (smooth scrolling)
-- TypeScript# Deployed to new server
-# Clean server deployment
+```
+├── app/                 # Next.js App Router pages
+├── components/          # React components
+├── styles/             # Global styles
+├── public/             # Static assets
+└── ...
+```
+
+## License
+
+© 2024 Airstars Asia, part of Shababu Group. All rights reserved.
