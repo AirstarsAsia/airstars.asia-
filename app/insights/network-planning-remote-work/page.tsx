@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import PageHero from '../../../components/PageHero'
+import BlogCTA from '../../../components/BlogCTA'
 
 export const metadata: Metadata = {
   title: 'Network Planning for Remote Work Success | Airstars Network Infrastructure',
@@ -13,13 +15,18 @@ export const metadata: Metadata = {
 
 export default function NetworkPlanningRemoteWork() {
   return (
-    <article className="max-w-4xl mx-auto px-6 py-12">
-      <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-          Network Planning for Remote Work Success
-        </h1>
+    <div>
+      <PageHero 
+        title="Network Planning for Remote Work Success"
+        subtitle="Build reliable network infrastructure for distributed teams that actually works"
+        backgroundImage="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        showLogo={true}
+      />
+      
+      <article className="max-w-4xl mx-auto px-6 py-12">
+        <header className="mb-12">
         <div className="flex items-center text-slate-600 mb-6">
-          <time dateTime="2024-08-09">August 9, 2024</time>
+          <time dateTime="2021-04-12">April 12, 2021</time>
           <span className="mx-2">•</span>
           <span>11 min read</span>
         </div>
@@ -238,22 +245,13 @@ export default function NetworkPlanningRemoteWork() {
           Calculate the total cost of ownership including support, security, and productivity tools.
         </p>
 
-        <div className="bg-slate-100 p-8 rounded-lg mt-12">
-          <h3 className="text-2xl font-bold text-slate-900 mb-4">
-            Ready to Optimize Your Remote Work Network?
-          </h3>
-          <p className="text-slate-700 mb-4">
-            Building reliable network infrastructure for distributed teams requires careful planning 
-            and ongoing optimization. I help small businesses design and implement network solutions 
-            that support productive remote work while maintaining security and cost-effectiveness.
-          </p>
-          <p className="text-slate-700">
-            <a href="mailto:hello@airstars.asia" className="text-blue-600 hover:text-blue-800 font-semibold">
-              Contact me
-            </a> to assess your remote work network needs and develop an implementation strategy.
-          </p>
+        <BlogCTA 
+          title="Ready to Optimize Your Remote Work Network?"
+          description="Building reliable network infrastructure for distributed teams requires careful planning and ongoing optimization. I help small businesses design and implement network solutions that support productive remote work while maintaining security and cost-effectiveness."
+          buttonText="Get Network Assessment"
+        />
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   )
 }

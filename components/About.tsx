@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-slate-900">About</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-slate-900">Beyond the Signal</h2>
         </motion.div>
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -21,23 +22,28 @@ export default function About() {
         >
           <div className="text-lg text-slate-600 leading-relaxed space-y-6">
             <p>
-              What started as a focused wireless networking consultancy has evolved into comprehensive 
-              small business IT support. My journey began with a deep specialization in Wi-Fi infrastructure, 
-              earning certifications as a Certified Wireless Network Professional (CWNP) including the 
-              challenging Certified Wireless Network Administrator, Planning, and Security certifications.
+              What began with wireless expertise has grown into something bigger. AirStars is where 
+              infrastructure meets innovation—your complete IT partner for everything from secure 
+              network design to custom software solutions.
             </p>
             <p>
-              Today, I organically grow with my clients, supporting everything from secure wireless deployments 
-              to complete workspace solutions. Whether it's designing enterprise-grade Wi-Fi networks, 
-              managing Mac deployments, optimizing Google Workspace and Microsoft 365 environments, 
-              or integrating the countless devices that keep small businesses running—I've touched every 
-              aspect of modern business IT.
+              We handle the three pillars that keep modern businesses running: rock-solid wireless 
+              and network infrastructure, comprehensive IT security and device management, and 
+              intelligent workspace solutions that actually work together. Beyond that, we build 
+              the software tools your business needs when off-the-shelf isn't enough.
             </p>
             <p>
-              My approach is simple: be the reliable IT partner that small businesses need, 
-              bringing enterprise-level expertise to organizations that deserve better than 
-              one-size-fits-all solutions.
+              Enterprise-grade expertise, small business focus. We're the team that makes 
+              technology work for you, not the other way around.
             </p>
+            <div className="mt-8">
+              <Link 
+                href="/story"
+                className="inline-block bg-[#4471c1] text-white px-6 py-3 rounded-full font-medium hover:bg-[#3a5fa0] transition-colors"
+              >
+                Read Our Full Story
+              </Link>
+            </div>
           </div>
         </motion.div>
       </div>

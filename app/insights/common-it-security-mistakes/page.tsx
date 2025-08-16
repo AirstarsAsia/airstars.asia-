@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import PageHero from '../../../components/PageHero'
+import BlogCTA from '../../../components/BlogCTA'
 
 export const metadata: Metadata = {
   title: 'Common IT Security Mistakes Small Businesses Make | Airstars Security Guide',
@@ -13,13 +15,18 @@ export const metadata: Metadata = {
 
 export default function CommonITSecurityMistakes() {
   return (
-    <article className="max-w-4xl mx-auto px-6 py-12">
-      <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-          Common IT Security Mistakes Small Businesses Make
-        </h1>
+    <div>
+      <PageHero 
+        title="Common IT Security Mistakes Small Businesses Make"
+        subtitle="Critical security vulnerabilities small businesses often overlook and how to fix them"
+        backgroundImage="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        showLogo={true}
+      />
+      
+      <article className="max-w-4xl mx-auto px-6 py-12">
+        <header className="mb-12">
         <div className="flex items-center text-slate-600 mb-6">
-          <time dateTime="2024-08-09">August 9, 2024</time>
+          <time dateTime="2023-11-15">November 15, 2023</time>
           <span className="mx-2">•</span>
           <span>13 min read</span>
         </div>
@@ -274,23 +281,13 @@ export default function CommonITSecurityMistakes() {
           always more cost-effective than reactive incident response.
         </p>
 
-        <div className="bg-slate-100 p-8 rounded-lg mt-12">
-          <h3 className="text-2xl font-bold text-slate-900 mb-4">
-            Ready to Strengthen Your Security Posture?
-          </h3>
-          <p className="text-slate-700 mb-4">
-            Don't wait for a security incident to expose vulnerabilities in your business. I help 
-            small businesses implement comprehensive security strategies that protect against 
-            common threats while remaining practical and cost-effective. From security assessments 
-            to ongoing monitoring, I'll help you build defenses that grow with your business.
-          </p>
-          <p className="text-slate-700">
-            <a href="mailto:hello@airstars.asia" className="text-blue-600 hover:text-blue-800 font-semibold">
-              Contact me
-            </a> for a security assessment and customized protection plan.
-          </p>
+        <BlogCTA 
+          title="Ready to Strengthen Your Security Posture?"
+          description="Don't wait for a security incident to expose vulnerabilities in your business. I help small businesses implement comprehensive security strategies that protect against common threats while remaining practical and cost-effective."
+          buttonText="Get Security Assessment"
+        />
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   )
 }

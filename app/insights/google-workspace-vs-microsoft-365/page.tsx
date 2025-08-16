@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import PageHero from '../../../components/PageHero'
+import BlogCTA from '../../../components/BlogCTA'
 
 export const metadata: Metadata = {
   title: 'Google Workspace vs Microsoft 365: Complete Small Business Comparison | Airstars',
@@ -13,13 +15,18 @@ export const metadata: Metadata = {
 
 export default function GoogleWorkspaceVsMicrosoft365() {
   return (
-    <article className="max-w-4xl mx-auto px-6 py-12">
-      <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-          Google Workspace vs Microsoft 365: What Small Businesses Need to Know
-        </h1>
+    <div>
+      <PageHero 
+        title="Google Workspace vs Microsoft 365: What Small Businesses Need to Know"
+        subtitle="Expert comparison to help you choose the right productivity suite for your team"
+        backgroundImage="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        showLogo={true}
+      />
+      
+      <article className="max-w-4xl mx-auto px-6 py-12">
+        <header className="mb-12">
         <div className="flex items-center text-slate-600 mb-6">
-          <time dateTime="2024-08-09">August 9, 2024</time>
+          <time dateTime="2024-06-22">June 22, 2024</time>
           <span className="mx-2">•</span>
           <span>8 min read</span>
         </div>
@@ -159,22 +166,13 @@ export default function GoogleWorkspaceVsMicrosoft365() {
           Many businesses benefit from working with an IT consultant to ensure smooth deployment and optimal configuration.
         </p>
 
-        <div className="bg-slate-100 p-8 rounded-lg mt-12">
-          <h3 className="text-2xl font-bold text-slate-900 mb-4">
-            Need Help Choosing the Right Platform?
-          </h3>
-          <p className="text-slate-700 mb-4">
-            Every business has unique needs when it comes to productivity tools. As a certified IT consultant 
-            with experience deploying both Google Workspace and Microsoft 365, I can help you evaluate your 
-            specific requirements and implement the right solution.
-          </p>
-          <p className="text-slate-700">
-            <a href="mailto:hello@airstars.asia" className="text-blue-600 hover:text-blue-800 font-semibold">
-              Contact me
-            </a> to discuss your business needs and get personalized recommendations.
-          </p>
+        <BlogCTA 
+          title="Need Help Choosing the Right Platform?"
+          description="Every business has unique needs when it comes to productivity tools. As a certified IT consultant with experience deploying both Google Workspace and Microsoft 365, I can help you evaluate your specific requirements and implement the right solution."
+          buttonText="Get Platform Consultation"
+        />
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   )
 }

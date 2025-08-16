@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import PageHero from '../../../components/PageHero'
+import BlogCTA from '../../../components/BlogCTA'
 
 export const metadata: Metadata = {
   title: 'Why Your Business Needs a Wireless Site Survey | Airstars CWNP Certified',
@@ -13,13 +15,18 @@ export const metadata: Metadata = {
 
 export default function WirelessSiteSurveyGuide() {
   return (
-    <article className="max-w-4xl mx-auto px-6 py-12">
-      <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-          Why Your Business Needs a Wireless Site Survey
-        </h1>
+    <div>
+      <PageHero 
+        title="Why Your Business Needs a Wireless Site Survey"
+        subtitle="Professional wireless site survey guidance from a CWNP certified expert"
+        backgroundImage="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        showLogo={true}
+      />
+      
+      <article className="max-w-4xl mx-auto px-6 py-12">
+        <header className="mb-12">
         <div className="flex items-center text-slate-600 mb-6">
-          <time dateTime="2024-08-09">August 9, 2024</time>
+          <time dateTime="2019-07-03">July 3, 2019</time>
           <span className="mx-2">•</span>
           <span>9 min read</span>
         </div>
@@ -237,23 +244,13 @@ export default function WirelessSiteSurveyGuide() {
           RF environment changes over time.
         </p>
 
-        <div className="bg-slate-100 p-8 rounded-lg mt-12">
-          <h3 className="text-2xl font-bold text-slate-900 mb-4">
-            Need a Professional Wireless Site Survey?
-          </h3>
-          <p className="text-slate-700 mb-4">
-            As a CWNP certified wireless professional, I provide comprehensive site surveys that 
-            ensure your Wi-Fi network delivers enterprise-grade performance and reliability. From 
-            predictive planning to post-deployment validation, I'll help you build a wireless 
-            infrastructure that supports your business goals.
-          </p>
-          <p className="text-slate-700">
-            <a href="mailto:hello@airstars.asia" className="text-blue-600 hover:text-blue-800 font-semibold">
-              Contact me
-            </a> to schedule your wireless site survey and network assessment.
-          </p>
+        <BlogCTA 
+          title="Need a Professional Wireless Site Survey?"
+          description="As a CWNP certified wireless professional, I provide comprehensive site surveys that ensure your Wi-Fi network delivers enterprise-grade performance and reliability. From predictive planning to post-deployment validation, I'll help you build a wireless infrastructure that supports your business goals."
+          buttonText="Schedule Site Survey"
+        />
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   )
 }

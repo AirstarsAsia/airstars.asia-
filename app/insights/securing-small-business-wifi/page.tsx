@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import PageHero from '../../../components/PageHero'
+import BlogCTA from '../../../components/BlogCTA'
 
 export const metadata: Metadata = {
   title: 'Securing Small Business Wi-Fi: Beyond WPA2 | Airstars IT Security',
@@ -13,21 +15,26 @@ export const metadata: Metadata = {
 
 export default function SecuringSmallBusinessWifi() {
   return (
-    <article className="max-w-4xl mx-auto px-6 py-12">
-      <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-          Securing Small Business Wi-Fi: Beyond WPA2
-        </h1>
-        <div className="flex items-center text-slate-600 mb-6">
-          <time dateTime="2024-08-09">August 9, 2024</time>
-          <span className="mx-2">•</span>
-          <span>10 min read</span>
-        </div>
-        <p className="text-xl text-slate-700 leading-relaxed">
-          Basic WPA2 encryption isn't enough to protect modern small businesses. As a CWNP certified wireless 
-          professional, I'll show you enterprise-grade security strategies that don't require enterprise budgets.
-        </p>
-      </header>
+    <div>
+      <PageHero 
+        title="Securing Small Business Wi-Fi: Beyond WPA2"
+        subtitle="Enterprise-grade wireless security strategies that don't require enterprise budgets"
+        backgroundImage="https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        showLogo={true}
+      />
+      
+      <article className="max-w-4xl mx-auto px-6 py-12">
+        <header className="mb-12">
+          <div className="flex items-center text-slate-600 mb-6">
+            <time dateTime="2020-01-28">January 28, 2020</time>
+            <span className="mx-2">•</span>
+            <span>10 min read</span>
+          </div>
+          <p className="text-xl text-slate-700 leading-relaxed">
+            Basic WPA2 encryption isn't enough to protect modern small businesses. As a CWNP certified wireless 
+            professional, I'll show you enterprise-grade security strategies that don't require enterprise budgets.
+          </p>
+        </header>
 
       <div className="prose prose-lg max-w-none">
         <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">
@@ -156,22 +163,13 @@ export default function SecuringSmallBusinessWifi() {
           team becomes comfortable with the new infrastructure.
         </p>
 
-        <div className="bg-slate-100 p-8 rounded-lg mt-12">
-          <h3 className="text-2xl font-bold text-slate-900 mb-4">
-            Ready to Secure Your Wireless Network?
-          </h3>
-          <p className="text-slate-700 mb-4">
-            As a CWNP certified wireless professional, I specialize in designing and implementing 
-            enterprise-grade wireless security for small businesses. From site surveys to ongoing 
-            monitoring, I'll help you build a network that grows with your business.
-          </p>
-          <p className="text-slate-700">
-            <a href="mailto:hello@airstars.asia" className="text-blue-600 hover:text-blue-800 font-semibold">
-              Contact me
-            </a> for a wireless security assessment and implementation plan.
-          </p>
+        <BlogCTA 
+          title="Ready to Secure Your Wireless Network?"
+          description="As a CWNP certified wireless professional, I specialize in designing and implementing enterprise-grade wireless security for small businesses. From site surveys to ongoing monitoring, I'll help you build a network that grows with your business."
+          buttonText="Get Security Assessment"
+        />
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   )
 }

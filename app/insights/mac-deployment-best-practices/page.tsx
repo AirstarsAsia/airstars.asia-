@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import PageHero from '../../../components/PageHero'
+import BlogCTA from '../../../components/BlogCTA'
 
 export const metadata: Metadata = {
   title: 'Mac Deployment Best Practices for Growing Teams | Airstars Mac Management',
@@ -13,13 +15,18 @@ export const metadata: Metadata = {
 
 export default function MacDeploymentBestPractices() {
   return (
-    <article className="max-w-4xl mx-auto px-6 py-12">
-      <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-          Mac Deployment Best Practices for Growing Teams
-        </h1>
+    <div>
+      <PageHero 
+        title="Mac Deployment Best Practices for Growing Teams"
+        subtitle="Enterprise-grade Mac management without the enterprise complexity"
+        backgroundImage="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        showLogo={true}
+      />
+      
+      <article className="max-w-4xl mx-auto px-6 py-12">
+        <header className="mb-12">
         <div className="flex items-center text-slate-600 mb-6">
-          <time dateTime="2024-08-09">August 9, 2024</time>
+          <time dateTime="2022-09-08">September 8, 2022</time>
           <span className="mx-2">•</span>
           <span>12 min read</span>
         </div>
@@ -56,28 +63,42 @@ export default function MacDeploymentBestPractices() {
         <h3 className="text-2xl font-semibold text-slate-800 mt-8 mb-4">
           Small Business MDM Options
         </h3>
-        <div className="grid md:grid-cols-2 gap-6 mb-6">
-          <div className="bg-slate-50 p-6 rounded-lg">
-            <h4 className="text-lg font-semibold text-slate-800 mb-3">Jamf Now</h4>
-            <p className="text-slate-700 text-sm mb-2">Best for: Mac-focused environments</p>
+        <div className="grid md:grid-cols-3 gap-4 mb-6">
+          <div className="bg-slate-50 p-4 rounded-lg">
+            <h4 className="text-lg font-semibold text-slate-800 mb-2">Mosyle</h4>
+            <p className="text-slate-700 text-sm mb-2">Best for: Education and SMB</p>
             <ul className="list-disc list-inside text-slate-600 text-sm space-y-1">
-              <li>$2/device/month</li>
-              <li>Easy setup and management</li>
-              <li>Strong macOS integration</li>
-              <li>Limited Windows support</li>
+              <li>Free for education</li>
+              <li>$2-4/device/month business</li>
+              <li>Apple-focused design</li>
+              <li>Excellent automation</li>
             </ul>
           </div>
-          <div className="bg-slate-50 p-6 rounded-lg">
-            <h4 className="text-lg font-semibold text-slate-800 mb-3">Microsoft Intune</h4>
-            <p className="text-slate-700 text-sm mb-2">Best for: Mixed Mac/PC environments</p>
+          <div className="bg-slate-50 p-4 rounded-lg">
+            <h4 className="text-lg font-semibold text-slate-800 mb-2">Microsoft Intune</h4>
+            <p className="text-slate-700 text-sm mb-2">Best for: Mixed environments</p>
             <ul className="list-disc list-inside text-slate-600 text-sm space-y-1">
-              <li>$6/user/month (includes other services)</li>
+              <li>$6/user/month</li>
               <li>Unified endpoint management</li>
               <li>Azure AD integration</li>
-              <li>Steeper learning curve</li>
+              <li>Cross-platform support</li>
+            </ul>
+          </div>
+          <div className="bg-slate-50 p-4 rounded-lg">
+            <h4 className="text-lg font-semibold text-slate-800 mb-2">Jamf Pro</h4>
+            <p className="text-slate-700 text-sm mb-2">Best for: Enterprise Mac</p>
+            <ul className="list-disc list-inside text-slate-600 text-sm space-y-1">
+              <li>$8-12/device/month</li>
+              <li>Advanced Mac management</li>
+              <li>Extensive customization</li>
+              <li>Enterprise features</li>
             </ul>
           </div>
         </div>
+        <p className="text-slate-700 leading-relaxed mb-6">
+          Having worked with most major MDM platforms including Kandji, SimpleMDM, and Addigy, 
+          I can help you choose the solution that best fits your specific needs, budget, and technical requirements.
+        </p>
 
         <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">
           Zero-Touch Deployment Strategy
@@ -210,22 +231,13 @@ export default function MacDeploymentBestPractices() {
           <li><strong>Neglecting documentation:</strong> Document all configurations and procedures</li>
         </ul>
 
-        <div className="bg-slate-100 p-8 rounded-lg mt-12">
-          <h3 className="text-2xl font-bold text-slate-900 mb-4">
-            Need Help with Mac Deployment?
-          </h3>
-          <p className="text-slate-700 mb-4">
-            As a Mac specialist with years of deployment experience, I help small businesses build 
-            scalable Mac management systems. From initial ABM setup to ongoing policy management, 
-            I'll ensure your Mac deployment supports your business growth.
-          </p>
-          <p className="text-slate-700">
-            <a href="mailto:hello@airstars.asia" className="text-blue-600 hover:text-blue-800 font-semibold">
-              Contact me
-            </a> to discuss your Mac deployment strategy and implementation timeline.
-          </p>
+        <BlogCTA 
+          title="Need Help with Mac Deployment?"
+          description="As a Mac specialist with years of deployment experience, I help small businesses build scalable Mac management systems. From initial ABM setup to ongoing policy management, I'll ensure your Mac deployment supports your business growth."
+          buttonText="Get Mac Consultation"
+        />
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   )
 }
