@@ -22,8 +22,8 @@ export default function BlogCTA({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 rounded-2xl mt-12 shadow-xl"
     >
+      <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 rounded-2xl mt-12 shadow-xl">
       <div className="text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-4">
           {title}
@@ -45,6 +45,7 @@ export default function BlogCTA({
             Learn More About Us
           </Link>
         </div>
+      </div>
       </div>
     </motion.div>
   )

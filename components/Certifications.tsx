@@ -75,12 +75,10 @@ export default function Certifications() {
                     y: -4,
                     transition: { duration: 0.3, ease: "easeOut" }
                   }}
-                  className="cursor-pointer"
                 >
-                  <div className="relative group">
+                  <div className="relative group cursor-pointer">
                     {/* Magnetic Glow Effect */}
                     <motion.div 
-                      className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-lg blur-md opacity-0 group-hover:opacity-100"
                       animate={{
                         scale: [1, 1.2, 1],
                         opacity: [0, 0.3, 0]
@@ -90,21 +88,23 @@ export default function Certifications() {
                         repeat: Infinity,
                         delay: index * 0.4
                       }}
-                    />
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-lg blur-md opacity-0 group-hover:opacity-100" />
+                    </motion.div>
                     
                     {/* Connection Lines */}
                     {index < certifications.length - 1 && (
                       <motion.div 
-                        className="absolute top-1/2 -right-6 w-12 h-0.5 bg-gradient-to-r from-blue-300/50 to-transparent"
                         initial={{ scaleX: 0, opacity: 0 }}
                         whileInView={{ scaleX: 1, opacity: 1 }}
                         transition={{ delay: (index + 1) * 0.2, duration: 0.8 }}
                         viewport={{ once: true }}
-                      />
+                      >
+                        <div className="absolute top-1/2 -right-6 w-12 h-0.5 bg-gradient-to-r from-blue-300/50 to-transparent" />
+                      </motion.div>
                     )}
                     
                     <motion.div 
-                      className="h-24 px-8 flex items-center bg-white border border-slate-200 rounded-lg shadow-sm hover:shadow-xl hover:shadow-blue-200/50 transition-all duration-300 relative z-10"
                       animate={{ 
                         y: [0, -3, 0],
                       }}
@@ -118,13 +118,15 @@ export default function Certifications() {
                         boxShadow: "0 0 30px rgba(59, 130, 246, 0.3)"
                       }}
                     >
-                      <Image
-                        src={cert.logo}
-                        alt={cert.description}
-                        width={150}
-                        height={96}
-                        className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-500"
-                      />
+                      <div className="h-24 px-8 flex items-center bg-white border border-slate-200 rounded-lg shadow-sm hover:shadow-xl hover:shadow-blue-200/50 transition-all duration-300 relative z-10">
+                        <Image
+                          src={cert.logo}
+                          alt={cert.description}
+                          width={150}
+                          height={96}
+                          className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-500"
+                        />
+                      </div>
                     </motion.div>
                   </div>
                 </motion.div>
