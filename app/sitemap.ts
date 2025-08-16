@@ -17,6 +17,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+      url: `${baseUrl}/case-studies/freshpass-meraki-guest-access`,
+      lastModified: new Date(),
+    },
+    {
       url: `${baseUrl}/insights/securing-small-business-wifi`,
       lastModified: new Date('2020-01-28'),
     },
