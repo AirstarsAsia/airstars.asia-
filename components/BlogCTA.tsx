@@ -18,11 +18,11 @@ export default function BlogCTA({
 }: BlogCTAProps) {
   return (
     <motion.div 
-      className="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 rounded-2xl mt-12 shadow-xl"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
+      className="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 rounded-2xl mt-12 shadow-xl"
     >
       <div className="text-center">
         <h3 className="text-2xl md:text-3xl font-bold mb-4">
