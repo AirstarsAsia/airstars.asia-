@@ -21,6 +21,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+      url: `${baseUrl}/case-studies/boutique-investment-mdm`,
+      lastModified: new Date(),
+    },
+    {
       url: `${baseUrl}/insights/securing-small-business-wifi`,
       lastModified: new Date('2020-01-28'),
     },
