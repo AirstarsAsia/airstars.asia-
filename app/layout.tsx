@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import type { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -52,7 +53,23 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Script
+          id="crisp-config"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.$crisp=[];
+              window.CRISP_WEBSITE_ID="a4a2a053-9d9a-4ef3-b448-de3f0e08ac0a";
+            `
+          }}
+        />
+        <Script
+          src="https://client.crisp.chat/l.js"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   )
 }
