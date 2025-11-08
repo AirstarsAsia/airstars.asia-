@@ -38,9 +38,9 @@ export default function Footer() {
         
         <div className="border-t border-slate-700 pt-8 text-sm text-center md:text-left">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>© 2024 Airstars Asia, part of Shababu Group. All rights reserved.</p>
+            <p>© 2024 Airstars, part of Shababu Group. All rights reserved.</p>
             <p>
-              Registered in Asia | 
+              Registered in England & Wales | 
               <a 
                 href="https://find-and-update.company-information.service.gov.uk/company/16621448" 
                 target="_blank" 
