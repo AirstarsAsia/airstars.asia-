@@ -19,7 +19,7 @@ export default function MacDeploymentBestPractices() {
       <PageHero 
         title="Mac Deployment Best Practices for Growing Teams"
         subtitle="Enterprise-grade Mac management without the enterprise complexity"
-        backgroundImage="/bg-gradient-1.svg"
+        backgroundImage="/images/pexels-rubaitulazad-16150336.jpg"
         showLogo={true}
       />
       
@@ -97,7 +97,7 @@ export default function MacDeploymentBestPractices() {
         </div>
         <p className="text-slate-700 leading-relaxed mb-6">
           Having worked with most major MDM platforms including Kandji, SimpleMDM, and Addigy, 
-          I can help you choose the solution that best fits your specific needs, budget, and technical requirements.
+          we can help you choose the solution that best fits your specific needs, budget, and technical requirements.
         </p>
 
         <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">

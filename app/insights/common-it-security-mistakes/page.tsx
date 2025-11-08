@@ -19,7 +19,7 @@ export default function CommonITSecurityMistakes() {
       <PageHero 
         title="Common IT Security Mistakes Small Businesses Make"
         subtitle="Critical security vulnerabilities small businesses often overlook and how to fix them"
-        backgroundImage="/bg-gradient-1.svg"
+        backgroundImage="/images/pexels-pixabay-60504.jpg"
         showLogo={true}
       />
       

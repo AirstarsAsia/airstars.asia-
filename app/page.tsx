@@ -71,8 +71,8 @@ export default function Home() {
       <SmoothScroll />
       <Hero />
       <Services />
-      <About />
       <Blog />
+      <About />
       <Contact />
       <Footer />
     </>

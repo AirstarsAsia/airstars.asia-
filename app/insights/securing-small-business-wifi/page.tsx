@@ -19,7 +19,7 @@ export default function SecuringSmallBusinessWifi() {
       <PageHero 
         title="Securing Business Wi-Fi"
         subtitle="Enterprise-grade wireless security strategies that don't require enterprise budgets"
-        backgroundImage="/bg-gradient-1.svg"
+        backgroundImage="/images/pexels-craigmdennis-57007.jpg"
         showLogo={true}
       />
       
