@@ -3,11 +3,11 @@ import PageHero from '../../../components/PageHero'
 import BlogCTA from '../../../components/BlogCTA'
 
 export const metadata: Metadata = {
-  title: 'Securing Small Business Wi-Fi: Beyond WPA2 | Airstars IT Security',
-  description: 'Advanced wireless security strategies for small businesses. Learn enterprise-grade Wi-Fi protection, WPA3 implementation, and network segmentation best practices.',
-  keywords: 'Wi-Fi security, WPA3, wireless network security, small business cybersecurity, network segmentation, enterprise wireless',
+  title: 'Securing Small Business Wi-Fi | Airstars IT Security',
+  description: 'Advanced wireless security strategies for small businesses. Learn enterprise-grade Wi-Fi protection, network segmentation, and authentication best practices.',
+  keywords: 'Wi-Fi security, wireless network security, small business cybersecurity, network segmentation, enterprise wireless, 802.1X',
   openGraph: {
-    title: 'Securing Small Business Wi-Fi: Beyond WPA2',
+    title: 'Securing Small Business Wi-Fi: Enterprise-Grade Protection',
     description: 'Enterprise-grade wireless security strategies for small businesses from a CWNP certified professional.',
     type: 'article',
   }
@@ -17,7 +17,7 @@ export default function SecuringSmallBusinessWifi() {
   return (
     <div>
       <PageHero 
-        title="Securing Small Business Wi-Fi: Beyond WPA2"
+        title="Securing Business Wi-Fi"
         subtitle="Enterprise-grade wireless security strategies that don't require enterprise budgets"
         backgroundImage="https://picsum.photos/2000/800?random=1"
         showLogo={true}
@@ -26,41 +26,41 @@ export default function SecuringSmallBusinessWifi() {
       <article className="max-w-4xl mx-auto px-6 py-12">
         <header className="mb-12">
           <div className="flex items-center text-slate-600 mb-6">
-            <time dateTime="2020-01-28">January 28, 2020</time>
+            <time dateTime="2020-01-28">January 28, 2024</time>
             <span className="mx-2">•</span>
             <span>10 min read</span>
           </div>
           <p className="text-xl text-slate-700 leading-relaxed">
-            Basic WPA2 encryption isn't enough to protect modern small businesses. As a CWNP certified wireless 
+            Shared passwords and basic encryption aren't enough to protect modern small businesses. As a CWNP certified wireless 
             professional, I'll show you enterprise-grade security strategies that don't require enterprise budgets.
           </p>
         </header>
 
       <div className="prose prose-lg max-w-none">
         <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">
-          Why WPA2 Alone Isn't Sufficient
+          Why Shared Passwords Create Risk
         </h2>
         <p className="text-slate-700 leading-relaxed mb-6">
-          WPA2, while still widely used, has known vulnerabilities including KRACK attacks and brute force 
-          susceptibility. More importantly, a single shared password means one compromised device can expose 
-          your entire network. Small businesses need layered security that scales with growth.
+          A single shared Wi-Fi password means one compromised device can expose your entire network. 
+          When employees leave or devices are lost, changing the password disrupts everyone. Small businesses 
+          need authentication systems that provide individual accountability and easy access management.
         </p>
 
         <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">
-          Implementing WPA3: The New Standard
+          Strong Encryption Foundation
         </h2>
         <div className="bg-green-50 border-l-4 border-green-400 p-6 mb-6">
-          <h3 className="text-xl font-semibold text-green-800 mb-3">WPA3 Advantages:</h3>
+          <h3 className="text-xl font-semibold text-green-800 mb-3">Modern Encryption Standards:</h3>
           <ul className="list-disc list-inside text-green-700 space-y-2">
-            <li>Simultaneous Authentication of Equals (SAE) prevents offline dictionary attacks</li>
-            <li>Forward secrecy protects past sessions even if password is compromised</li>
-            <li>Enhanced Open provides encryption for guest networks</li>
-            <li>192-bit security suite for sensitive environments</li>
+            <li>WPA2 with AES encryption as minimum standard</li>
+            <li>Strong, complex passwords (minimum 20 characters)</li>
+            <li>Regular password rotation policies</li>
+            <li>Separate networks for different user types</li>
           </ul>
         </div>
         <p className="text-slate-700 leading-relaxed mb-6">
-          When upgrading to WPA3, ensure all devices support the standard. Mixed WPA2/WPA3 environments 
-          can introduce compatibility issues that may weaken overall security.
+          While newer standards exist, WPA2 with proper implementation provides strong security for most 
+          small business environments when combined with other security layers.
         </p>
 
         <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">
@@ -92,7 +92,7 @@ export default function SecuringSmallBusinessWifi() {
           Enterprise Authentication Without Enterprise Complexity
         </h2>
         <h3 className="text-2xl font-semibold text-slate-800 mt-8 mb-4">
-          WPA2/WPA3-Enterprise with Cloud RADIUS
+          WPA2-Enterprise with Cloud RADIUS
         </h3>
         <p className="text-slate-700 leading-relaxed mb-6">
           Move beyond shared passwords with 802.1X authentication. Cloud-based RADIUS services like 
@@ -158,7 +158,7 @@ export default function SecuringSmallBusinessWifi() {
           Implementation Roadmap
         </h2>
         <p className="text-slate-700 leading-relaxed mb-6">
-          Start with network segmentation and WPA3 migration. These provide immediate security improvements 
+          Start with network segmentation and strong encryption policies. These provide immediate security improvements 
           with minimal disruption. Then implement 802.1X authentication and monitoring systems as your 
           team becomes comfortable with the new infrastructure.
         </p>
