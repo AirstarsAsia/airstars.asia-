@@ -19,7 +19,7 @@ export default function GoogleWorkspaceVsMicrosoft365() {
       <PageHero 
         title="Google Workspace vs Microsoft 365: What Small Businesses Need to Know"
         subtitle="Expert comparison to help you choose the right productivity suite for your team"
-        backgroundImage="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundImage="https://picsum.photos/2000/800?random=2"
         showLogo={true}
       />
       

@@ -17,7 +17,7 @@ export default function BoutiqueInvestmentMDMCase() {
     <BoutiqueInvestmentCaseStudyContent 
       title="Zero-Touch Security for a Boutique Investment Team"
       subtitle="How AirStars guided a Tokyo investment firm from zero MDM to a hardened, automated Apple environment with Mosyle and Apple Business Manager"
-      backgroundImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+      backgroundImage="https://picsum.photos/2000/800?random=9"
     />
   )
 }

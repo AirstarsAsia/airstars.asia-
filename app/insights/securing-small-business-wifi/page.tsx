@@ -19,7 +19,7 @@ export default function SecuringSmallBusinessWifi() {
       <PageHero 
         title="Securing Small Business Wi-Fi: Beyond WPA2"
         subtitle="Enterprise-grade wireless security strategies that don't require enterprise budgets"
-        backgroundImage="https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundImage="https://picsum.photos/2000/800?random=1"
         showLogo={true}
       />
       
