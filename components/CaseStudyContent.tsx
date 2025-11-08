@@ -185,7 +185,7 @@ export default function CaseStudyContent({ title, subtitle, backgroundImage }: C
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="https://picsum.photos/800/400?random=10"
                   alt="Google Calendar monthly view showing staff leave requests"
                   className="w-full h-48 object-cover"
                 />
@@ -200,7 +200,7 @@ export default function CaseStudyContent({ title, subtitle, backgroundImage }: C
               
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="https://picsum.photos/800/400?random=11"
                   alt="Google Calendar weekly view with detailed leave information"
                   className="w-full h-48 object-cover"
                 />
@@ -215,7 +215,7 @@ export default function CaseStudyContent({ title, subtitle, backgroundImage }: C
               
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="https://picsum.photos/800/400?random=12"
                   alt="Google Calendar event details showing staff member and leave type"
                   className="w-full h-48 object-cover"
                 />
