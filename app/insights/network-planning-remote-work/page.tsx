@@ -19,7 +19,7 @@ export default function NetworkPlanningRemoteWork() {
       <PageHero 
         title="Network Planning for Remote Work Success"
         subtitle="Build reliable network infrastructure for distributed teams that actually works"
-        backgroundImage="https://picsum.photos/2000/800?random=3"
+        backgroundImage="/bg-gradient-1.svg"
         showLogo={true}
       />
       

@@ -19,7 +19,7 @@ export default function MacDeploymentBestPractices() {
       <PageHero 
         title="Mac Deployment Best Practices for Growing Teams"
         subtitle="Enterprise-grade Mac management without the enterprise complexity"
-        backgroundImage="https://picsum.photos/2000/800?random=5"
+        backgroundImage="/bg-gradient-1.svg"
         showLogo={true}
       />
       

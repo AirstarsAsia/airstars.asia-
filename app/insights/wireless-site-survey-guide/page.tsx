@@ -19,7 +19,7 @@ export default function WirelessSiteSurveyGuide() {
       <PageHero 
         title="Why Your Business Needs a Wireless Site Survey"
         subtitle="Professional wireless site survey guidance from a CWNP certified expert"
-        backgroundImage="https://picsum.photos/2000/800?random=6"
+        backgroundImage="/bg-gradient-1.svg"
         showLogo={true}
       />
       

@@ -17,7 +17,7 @@ export default function KingOfTimeIntegrationCase() {
     <CaseStudyContent 
       title="Making Leave Requests Visual and Manageable"
       subtitle="How AirStars helped an international school improve its King of Time workflows with Google Calendar integration"
-      backgroundImage="https://picsum.photos/2000/800?random=8"
+      backgroundImage="/bg-gradient-1.svg"
     />
   )
 }
