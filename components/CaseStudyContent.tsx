@@ -184,40 +184,49 @@ export default function CaseStudyContent({ title, subtitle, backgroundImage }: C
             
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img 
-                  src="https://picsum.photos/800/400?random=10"
+                <img
+                  src="/images/pexels-salvatore-de-lellis-107015876-9683980.jpg"
                   alt="Google Calendar monthly view showing staff leave requests"
                   className="w-full h-48 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = '/bg-gradient-1.svg'
+                  }}
                 />
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-slate-900 mb-2">Monthly Overview</h3>
                   <p className="text-slate-600 text-sm">
-                    Color-coded leave events provide instant visibility into staff availability 
+                    Color-coded leave events provide instant visibility into staff availability
                     across the entire month.
                   </p>
                 </div>
               </div>
-              
+
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img 
-                  src="https://picsum.photos/800/400?random=11"
+                <img
+                  src="/images/pexels-brett-sayles-2881233.jpg"
                   alt="Google Calendar weekly view with detailed leave information"
                   className="w-full h-48 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = '/bg-gradient-2.svg'
+                  }}
                 />
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-slate-900 mb-2">Weekly Planning</h3>
                   <p className="text-slate-600 text-sm">
-                    Detailed weekly view shows exact leave durations and types, 
+                    Detailed weekly view shows exact leave durations and types,
                     making coverage planning effortless.
                   </p>
                 </div>
               </div>
-              
+
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img 
-                  src="https://picsum.photos/800/400?random=12"
+                <img
+                  src="/images/pexels-mikhail-nilov-7821343.jpg"
                   alt="Google Calendar event details showing staff member and leave type"
                   className="w-full h-48 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = '/bg-gradient-3.svg'
+                  }}
                 />
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-slate-900 mb-2">Event Details</h3>
@@ -255,11 +264,9 @@ export default function CaseStudyContent({ title, subtitle, backgroundImage }: C
                 <span className="text-sm text-slate-600">Google Calendar</span>
               </div>
               <div className="flex flex-col items-center">
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                  alt="Python"
-                  className="w-12 h-12 mb-2"
-                />
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-2">
+                  <span className="text-white font-mono text-lg font-bold">Py</span>
+                </div>
                 <span className="text-sm text-slate-600">Python</span>
               </div>
               <div className="flex flex-col items-center">

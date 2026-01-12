@@ -202,45 +202,54 @@ export default function FreshPassCaseStudyContent({ title, subtitle, backgroundI
             
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                <img
+                  src="/images/pexels-rubaitulazad-16150336.jpg"
                   alt="Reception tablet showing FreshPass QR code generator"
                   className="w-full h-48 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = '/bg-gradient-1.svg'
+                  }}
                 />
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-slate-900 mb-2">1. Tap to Generate</h3>
                   <p className="text-slate-600 text-sm">
-                    Reception staff simply tap the tablet screen to generate a new QR code 
+                    Reception staff simply tap the tablet screen to generate a new QR code
                     with unique credentials for incoming visitors.
                   </p>
                 </div>
               </div>
-              
+
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                <img
+                  src="/images/pexels-craigmdennis-57007.jpg"
                   alt="Visitors scanning QR code for WiFi access"
                   className="w-full h-48 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = '/bg-gradient-2.svg'
+                  }}
                 />
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-slate-900 mb-2">2. Scan & Connect</h3>
                   <p className="text-slate-600 text-sm">
-                    Visitors scan the QR code to automatically connect, or manually enter 
+                    Visitors scan the QR code to automatically connect, or manually enter
                     the displayed SSID and password for laptop users.
                   </p>
                 </div>
               </div>
-              
+
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                <img
+                  src="/images/pexels-pixabay-60504.jpg"
                   alt="Secure WiFi connection with time-limited access"
                   className="w-full h-48 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = '/bg-gradient-3.svg'
+                  }}
                 />
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-slate-900 mb-2">3. Secure Access</h3>
                   <p className="text-slate-600 text-sm">
-                    Each group gets encrypted access with individual credentials that 
+                    Each group gets encrypted access with individual credentials that
                     automatically expire after the administrator-defined period.
                   </p>
                 </div>

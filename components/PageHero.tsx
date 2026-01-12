@@ -11,11 +11,11 @@ interface PageHeroProps {
   showLogo?: boolean
 }
 
-export default function PageHero({ 
-  title, 
-  subtitle, 
-  backgroundImage = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
-  showLogo = false 
+export default function PageHero({
+  title,
+  subtitle,
+  backgroundImage = "/images/pexels-markusspiske-1089438.jpg",
+  showLogo = false
 }: PageHeroProps) {
   return (
     <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden">
