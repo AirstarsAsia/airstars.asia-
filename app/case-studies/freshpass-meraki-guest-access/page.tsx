@@ -17,7 +17,7 @@ export default function FreshPassMerakiCase() {
     <FreshPassCaseStudyContent 
       title="Transforming Guest WiFi from Shared Risk to Individual Security"
       subtitle="How AirStars replaced Meraki's unreliable captive portal with FreshPass IPSK for secure, time-limited visitor access"
-      backgroundImage="/bg-gradient-1.svg"
+      backgroundImage="/images/Stacked-Dark.png"
     />
   )
 }
