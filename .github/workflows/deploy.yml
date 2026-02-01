@@ -1,4 +1,4 @@
-name: Deploy Shababu Website
+name: Deploy airstars.asia Website
 
 on:
   push:
