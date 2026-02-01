@@ -185,7 +185,7 @@ export default function CaseStudyContent({ title, subtitle, backgroundImage }: C
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img
-                  src="/images/pexels-salvatore-de-lellis-107015876-9683980.jpg"
+                  src="/images/calendar-monthly-overview.jpg"
                   alt="Google Calendar monthly view showing staff leave requests"
                   className="w-full h-48 object-cover"
                   onError={(e) => {
@@ -203,7 +203,7 @@ export default function CaseStudyContent({ title, subtitle, backgroundImage }: C
 
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img
-                  src="/images/pexels-brett-sayles-2881233.jpg"
+                  src="/images/calendar-weekly-planning.jpg"
                   alt="Google Calendar weekly view with detailed leave information"
                   className="w-full h-48 object-cover"
                   onError={(e) => {
@@ -221,7 +221,7 @@ export default function CaseStudyContent({ title, subtitle, backgroundImage }: C
 
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img
-                  src="/images/pexels-mikhail-nilov-7821343.jpg"
+                  src="/images/calendar-event-details.jpg"
                   alt="Google Calendar event details showing staff member and leave type"
                   className="w-full h-48 object-cover"
                   onError={(e) => {
@@ -325,12 +325,16 @@ export default function CaseStudyContent({ title, subtitle, backgroundImage }: C
               effectively, and tailored to your specific needs.
             </p>
             <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
-              <Link 
-                href="/#contact"
+              <button 
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).$crisp) {
+                    (window as any).$crisp.push(['do', 'chat:open'])
+                  }
+                }}
                 className="inline-block bg-[#4471c1] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[#3a5fa0] transition-colors"
               >
-                Discuss Your Project
-              </Link>
+                Let's Talk About Your Needs
+              </button>
               <Link 
                 href="/"
                 className="inline-block border border-slate-300 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-slate-800 transition-colors"

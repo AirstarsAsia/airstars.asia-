@@ -99,12 +99,16 @@ export default function FeaturedSolution() {
                   >
                     See How It Works
                   </Link>
-                  <Link
-                    href="/#contact"
+                  <button
+                    onClick={() => {
+                      if (typeof window !== 'undefined' && (window as any).$crisp) {
+                        (window as any).$crisp.push(['do', 'chat:open'])
+                      }
+                    }}
                     className="inline-block border-2 border-slate-300 text-slate-700 px-6 py-3 rounded-full font-medium hover:border-[#4471c1] hover:text-[#4471c1] transition-colors text-center"
                   >
-                    Discuss Your Needs
-                  </Link>
+                    Chat with Us
+                  </button>
                 </div>
 
                 <p className="text-sm text-slate-500 mt-6">

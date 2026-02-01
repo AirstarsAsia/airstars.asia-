@@ -136,12 +136,16 @@ export default function StoryPage() {
               not the other way around.
             </p>
             <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
-              <Link 
-                href="/#contact"
+              <button 
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).$crisp) {
+                    (window as any).$crisp.push(['do', 'chat:open'])
+                  }
+                }}
                 className="inline-block bg-[#4471c1] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[#3a5fa0] transition-colors"
               >
-                Get in Touch
-              </Link>
+                Let's Chat
+              </button>
               <Link 
                 href="/"
                 className="inline-block border border-slate-300 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-slate-800 transition-colors"

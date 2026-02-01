@@ -11,7 +11,7 @@ const caseStudies = [
     solution: 'Automated security with Mosyle and Apple Business Manager',
     results: ['FileVault encryption enforced', 'Zero-touch deployment', 'Compliance-ready security posture'],
     href: '/case-studies/boutique-investment-mdm',
-    image: '/bg-gradient-1.svg',
+    image: '/images/boutique-investment-hero.jpg',
     tags: ['MDM', 'Security', 'Apple']
   },
   {
@@ -23,6 +23,26 @@ const caseStudies = [
     href: '/case-studies/king-of-time-integration',
     image: '/images/pexels-rdne-7821578.jpg',
     tags: ['Integration', 'Automation', 'Python']
+  },
+  {
+    title: 'Google Workspace Security Audit for Japanese Data Privacy Compliance',
+    client: 'Tokyo Recruiting Agency',
+    challenge: 'Primary contractor needed specialized Google API expertise for compliance audit',
+    solution: 'Technical subcontracting: Python API analysis and data governance insights',
+    results: ['Deep API-driven analysis delivered', 'Compliance data foundation established', 'Technical expertise enabled broader governance'],
+    href: '/case-studies/google-workspace-audit',
+    image: '/images/google-workspace-audit-hero.jpg',
+    tags: ['API Specialist', 'Python', 'Google Workspace']
+  },
+  {
+    title: 'Multi-Campus Guest WiFi with Individual Security',
+    client: 'Educational Campus',
+    challenge: 'Secure guest WiFi across multiple campuses with Extreme Networks infrastructure',
+    solution: 'FreshPass implementation with 8-hour credential expiration and individual session tracking',
+    results: ['Frictionless guest onboarding', 'Individual credential accountability', 'Evaluation phase showing positive outcomes'],
+    href: '/case-studies/multi-campus-freshpass',
+    image: '/images/multi-campus-hero.jpg',
+    tags: ['Extreme Networks', 'Multi-Campus', 'Guest Access']
   }
 ]
 

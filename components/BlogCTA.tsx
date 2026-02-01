@@ -13,7 +13,7 @@ interface BlogCTAProps {
 export default function BlogCTA({ 
   title = "Need Expert IT Support?",
   description = "Get enterprise-grade solutions designed for small business reality. From network security to custom software, we make technology work for you.",
-  buttonText = "Get in Touch",
+  buttonText = "Start a Chat",
   buttonLink = "mailto:hello@airstars.asia"
 }: BlogCTAProps) {
   return (
@@ -32,12 +32,16 @@ export default function BlogCTA({
           {description}
         </p>
         <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
-          <Link 
-            href={buttonLink}
+          <button 
+            onClick={() => {
+              if (typeof window !== 'undefined' && (window as any).$crisp) {
+                (window as any).$crisp.push(['do', 'chat:open'])
+              }
+            }}
             className="inline-block bg-[#4471c1] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[#3a5fa0] transition-colors"
           >
             {buttonText}
-          </Link>
+          </button>
           <Link 
             href="/story"
             className="inline-block border border-slate-300 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-slate-700 transition-colors"

@@ -35,7 +35,7 @@ export default function FreshPassCaseStudyContent({ title, subtitle, backgroundI
               <p>
                 A large organization with daily visitors approached AirStars with a common but critical 
                 security challenge: their Meraki captive portal was unreliable, and reception staff 
-                couldn't practically carry guest WiFi passwords for every visitor group.
+                couldn't practically carry guest WiFi passwords for every visitor.
               </p>
               <p>
                 The traditional approach—sharing a single PSK (Pre-Shared Key) across all guests—meant 
@@ -107,11 +107,11 @@ export default function FreshPassCaseStudyContent({ title, subtitle, backgroundI
                 <h3 className="text-xl font-semibold text-blue-900 mb-4">How It Works</h3>
                 <ul className="list-disc list-inside space-y-2 text-blue-800">
                   <li>Reception staff tap tablet portal to generate new QR code</li>
-                  <li>Each visitor group gets unique IPSK credentials</li>
+                  <li>Each visitor gets unique IPSK credentials</li>
                   <li>QR codes display SSID, password, and expiration time</li>
-                  <li>Credentials expire after administrator-defined period (30 minutes to several hours)</li>
-                  <li>New credentials automatically generated for next visitor group</li>
-                  <li>Group policy applied to SSID for controlled network access</li>
+                  <li>Credentials expire after administrator-defined period (one day, one week, or one month)</li>
+                  <li>New credentials automatically generated for next visitor</li>
+                  <li>Policy applied to SSID for controlled network access</li>
                 </ul>
                 <p className="mt-4 text-blue-800 text-sm">
                   Learn more about FreshPass at{' '}
@@ -128,7 +128,7 @@ export default function FreshPassCaseStudyContent({ title, subtitle, backgroundI
               
               <p>
                 AirStars' implementation replaced Meraki's unreliable captive portal with a robust, 
-                security-first approach that gives each visitor group their own encrypted 
+                security-first approach that gives each visitor their own encrypted 
                 session while maintaining the simplicity that reception staff needed.
               </p>
             </div>
@@ -167,7 +167,7 @@ export default function FreshPassCaseStudyContent({ title, subtitle, backgroundI
                 <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-400">
                   <h3 className="text-lg font-semibold text-green-900 mb-3">After: Individual IPSK</h3>
                   <ul className="text-green-800 space-y-1 text-sm">
-                    <li>• Unique password per visitor group</li>
+                    <li>• Unique password per visitor</li>
                     <li>• Automatic expiration</li>
                     <li>• Time-limited access window</li>
                     <li>• Individual session tracking</li>
@@ -178,8 +178,51 @@ export default function FreshPassCaseStudyContent({ title, subtitle, backgroundI
               <p>
                 Credentials are only available through the QR portal for 5 minutes after generation, 
                 ensuring the next visitor group gets completely fresh, secure access.
+              </p>            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our Solution */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">
+              FreshPass IPSK Solution
+            </h2>
+            <div className="text-lg text-slate-600 leading-relaxed space-y-6">
+              <p>
+                AirStars implemented FreshPass with Meraki's IPSK (Individual Pre-Shared Keys) 
+                capability, eliminating the need for RADIUS infrastructure while dramatically 
+                improving security and user experience.
               </p>
-            </div>
+              
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-blue-900 mb-4">How It Works</h3>
+                <ul className="list-disc list-inside space-y-2 text-blue-800">
+                  <li>Reception staff tap tablet portal to generate new QR code</li>
+                  <li>Each visitor gets unique IPSK credentials</li>
+                  <li>QR codes display SSID, password, and expiration time</li>
+                  <li>Credentials expire after administrator-defined period (30 minutes to several hours)</li>
+                  <li>New credentials automatically generated for next visitor</li>
+                  <li>Policy applied to SSID for controlled network access</li>
+                </ul>
+                <p className="mt-4 text-blue-800 text-sm">
+                  Learn more about FreshPass at{' '}
+                  <a 
+                    href="https://freshpass.today" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="underline hover:text-blue-900"
+                  >
+                    freshpass.today
+                  </a>
+                </p>
+              </div>            </div>
           </motion.div>
         </div>
       </section>
@@ -385,12 +428,16 @@ export default function FreshPassCaseStudyContent({ title, subtitle, backgroundI
               and enterprise-grade security that's simple for staff to manage.
             </p>
             <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
-              <Link 
-                href="/#contact"
+              <button 
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).$crisp) {
+                    (window as any).$crisp.push(['do', 'chat:open'])
+                  }
+                }}
                 className="inline-block bg-[#4471c1] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[#3a5fa0] transition-colors"
               >
-                Discuss Your WiFi Security
-              </Link>
+                Chat About Your WiFi Security
+              </button>
               <Link 
                 href="/"
                 className="inline-block border border-slate-300 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-slate-800 transition-colors"
