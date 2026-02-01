@@ -1,42 +1,46 @@
-name: Deploy to Staging (Proxmox)
+name: Deploy airstars.asia Website
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  deploy-staging:
+  deploy:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Deploy to Proxmox Staging
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Build
+      run: npm run build
+    
+    - name: Deploy to server
+      uses: burnett01/rsync-deployments@5.2
+      with:
+        switches: -avzr --delete
+        path: out/
+        remote_path: /var/www/airstars/
+        remote_host: ${{ secrets.HOST }}
+        remote_user: ${{ secrets.USERNAME }}
+        remote_key: ${{ secrets.SSH_KEY }}
+    
+    - name: Restart nginx
       uses: appleboy/ssh-action@v0.1.5
       with:
-        host: ${{ secrets.STAGING_HOST }}
-        username: ${{ secrets.STAGING_USERNAME }}
-        key: ${{ secrets.STAGING_SSH_KEY }}
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
         port: 22
         timeout: 60s
-        command_timeout: 10m
+        command_timeout: 5m
         script: |
-          cd /var/www/airstars.asia/
-          
-          # Pull latest code
-          git pull origin main
-          
-          # Remove old build artifacts
-          rm -rf .next/ out/ node_modules/
-          
-          # Clear npm cache
-          npm cache clean --force
-          
-          # Install dependencies
-          npm install
-          
-          # Build for production
-          npm run build
-          
-          # Reload nginx to pick up changes
-          sudo systemctl reload nginx
-          
-          echo "✅ Staging deployment complete!"
+          sudo systemctl restart nginx
