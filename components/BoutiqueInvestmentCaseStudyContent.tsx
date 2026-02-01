@@ -319,7 +319,7 @@ export default function BoutiqueInvestmentCaseStudyContent({
                 className="inline-block bg-[#4471c1] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[#3a5fa0] transition-colors"
               >
                 Book a Discovery Call
-              </Link>
+              </button>
               <Link 
                 href="/"
                 className="inline-block border border-slate-300 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-slate-800 transition-colors"
