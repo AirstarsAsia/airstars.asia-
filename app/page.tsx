@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 import Services from '../components/Services'
 import About from '../components/About'
 import CaseStudies from '../components/CaseStudies'
-import FeaturedSolution from '../components/FeaturedSolution'
+// import FeaturedSolution from '../components/FeaturedSolution'
 import Blog from '../components/Blog'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
@@ -74,7 +74,7 @@ export default function Home() {
       <Hero />
       <Services />
       <CaseStudies />
-      <FeaturedSolution />
+      {/* <FeaturedSolution /> */}
       <Blog />
       <About />
       <Contact />
